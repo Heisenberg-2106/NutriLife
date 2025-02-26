@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    width: 100%;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 90px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+  }
+  

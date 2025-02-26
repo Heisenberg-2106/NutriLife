@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+.bmi-calculator {
+  font-family: 'Inter', sans-serif;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 350px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.bmi-calculator h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+
+.bmi-calculator input {
+  width: 80%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.bmi-calculator input:focus {
+  outline: none;
+  border: 2px solid #ff9f43;
+  box-shadow: 0px 0px 12px rgba(255, 159, 67, 0.8);
+}
+
+.bmi-calculator button {
+  width: 90%;
+  background: linear-gradient(135deg, #ff9f43, #ff6b00);
+  padding: 12px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+
+.bmi-calculator button:hover {
+  background: linear-gradient(135deg, #ff6b00, #d35400);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(255, 159, 67, 0.8);
+}
+
+.bmi-calculator p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 400px) {
+  .bmi-calculator {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,184 @@
+/* ===== Global Styles ===== */
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #141E30, #243B55);
+    padding: 20px;
+    width: 1478px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.heading{
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    position: absolute;
+}
+
+/* ===== Flexbox for Form & GIF Section ===== */
+.auth-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    gap: 150px;
+}
+
+/* ===== Form Box (Login/Signup) ===== */
+.auth-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Remove extra nesting by preventing flexbox from adding additional boxes */
+.auth-wrapper .auth-box {
+    flex: none; /* Prevents unexpected growing */
+}
+
+/* Smooth hover effect */
+.auth-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== Headings ===== */
+.auth-box h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* ===== Input Fields ===== */
+.auth-box input, 
+.auth-box select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.auth-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-box input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+}
+
+/* ===== Buttons ===== */
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-box button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+/* ===== Switch Between Login & Signup ===== */
+.auth-box p {
+    color: white;
+    margin-top: 1rem;
+}
+
+.auth-box span {
+    color: #ff4b2b;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-box span:hover {
+    color: #ff416c;
+    text-decoration: underline;
+}
+
+/* ===== GIF Section (Right Side) ===== */
+.auth-info {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Centering and Styling GIF ===== */
+.auth-gif {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.auth-gif:hover {
+    transform: scale(1.05);
+}
+
+/* ===== Text Below GIF ===== */
+.auth-text {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* ===== Responsive Design (Mobile-Friendly) ===== */
+@media (max-width: 900px) {
+    .auth-wrapper {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+
+    .auth-box {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .auth-info {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .auth-gif {
+        max-width: 280px;
+    }
+}

@@ -1,0 +1,170 @@
+/* ===== General Styles ===== */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #141E30, #243B55);
+    padding: 20px;
+    overflow: hidden;
+    width: 1479px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+    animation: glow 1.5s infinite alternate;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.images{
+    margin-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    padding: auto;
+    gap: 250px;
+    width: 100%;
+}
+
+.images img{
+    width: 500px;
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images img:hover{
+    transform: scale(1.05);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content p{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    text-align: center;    
+}
+
+.content h3{
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+}
+
+.content ul{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+/* ===== BMI & BMR Calculator ===== */
+.bmi-calculator {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 30px;
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bmi-calculator:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 255, 255, 0.4);
+}
+
+.bmi-calculator h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.bmi-calculator input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.bmi-calculator input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bmi-calculator input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #fff;
+}
+
+/* ===== Buttons ===== */
+.bmi-calculator button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bmi-calculator button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+}
+
+/* ===== Glowing Animation for Text ===== */
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+    }
+    to {
+        text-shadow: 0px 0px 15px #ff4b2b, 0px 0px 25px #ff416c;
+    }
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .bmi-calculator {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
